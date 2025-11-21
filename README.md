@@ -1,144 +1,197 @@
-# ACID Large Language Models
-Large Language Models
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Qinghuazhang1)](https://github.com/anuraghazra/github-readme-stats)  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Qinghuazhang1&show_icons=true)
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Qinghuazhang1&show_icons=true&theme=radical)
+# 🌍 TerraSense - Earth Intelligence
 
+> An 8-billion parameter multimodal model designed for complex reasoning, multi-turn dialogue, and fine-grained perception in remote sensing.
 
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=dark"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true" />
-</picture>
+[![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?logo=vite)](https://vitejs.dev/)
 
+## 📖 项目简介
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="your link" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="" height="30" width="40" /></a>
-<a href="your link" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="" height="30" width="40" /></a>
-<a href="your link" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="" height="30" width="40" /></a>
-<a href="your link" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="" height="30" width="40" /></a>
-</p>
+TerraSense 是一个展示 TerraSense-Base 8B 遥感基础模型的官方网站。该项目提供了一个现代化的 Web 界面，用于展示模型在遥感图像分析、目标检测、土地覆盖分类等任务中的卓越性能。
 
+### ✨ 主要特性
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+- 🛰️ **交互式图像分析** - 上传卫星图像，实时获得 AI 分析结果
+- 📊 **性能基准展示** - 详细的模型性能对比数据
+- 💬 **多轮对话模拟** - 展示模型的理解和推理能力
+- 🎨 **现代化 UI** - 深色主题，流畅动画，响应式设计
+- ⚡ **快速响应** - 基于 Vite 构建，开发体验极佳
 
+## 🚀 快速开始
 
+### 环境要求
 
+- Node.js 18+ 
+- npm 或 yarn
 
-# ACID 大语言模型发布
+### 安装步骤
 
-欢迎来到 **ACID Large Language Models** 项目的主页！本项目致力于开源与研究最新的大语言模型技术，持续推动自然语言处理领域发展。
+1. **克隆仓库**
+   ```bash
+   git clone https://github.com/your-username/terrasense.git
+   cd terrasense
+   ```
 
----
+2. **安装依赖**
+   ```bash
+   npm install
+   ```
 
-## 📢 最新发布
+3. **配置环境变量**
+   
+   复制 `env.example` 文件为 `.env.local`：
+   ```bash
+   # Windows (PowerShell)
+   Copy-Item env.example .env.local
+   
+   # Linux/Mac
+   cp env.example .env.local
+   ```
+   
+   在 `.env.local` 中填入你的 Gemini API Key：
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+   
+   > 💡 获取 API Key: 访问 [Google AI Studio](https://aistudio.google.com/) 获取 Gemini API Key
 
-| 版本         | 发布日期   | 架构      | 训练数据量 | 特色         | 下载链接  |
-|--------------|------------|-----------|------------|--------------|-----------|
-| ACID-7B      | 2024-11-20 | Transformer | 400GB      | 通用领域，极速推理，支持多语言 | [模型下载](#) |
-| ACID-13B     | 2025-01-10 | Transformer | 1TB        | 增强知识问答，更佳推理能力    | [模型下载](#) |
+4. **启动开发服务器**
+   ```bash
+   npm run dev
+   ```
+   
+   应用将在 `http://localhost:3000` 启动
 
----
+## 📦 构建部署
 
-## 🚀 动态演示
+### 构建生产版本
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmtvaGMxbXUwbjZpbG4yN284NmpuNnNudTc1c3psYXhkOW51cHJ4dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/V4NSR1NG2p0KeJJyr5/giphy.gif" width="600" alt="ACID模型推理演示"/>
-</p>
-
----
-
-## 📊 模型能力一览
-
-| 能力      | 分数 (满分100) | 评价        |
-|-----------|:-------------:|------------|
-| 中文理解   |      96       | 优秀        |
-| 英文理解   |      94       | 优秀        |
-| 数学推理   |      91       | 很好        |
-| 编程能力   |      93       | 优秀        |
-| 多轮对话   |      90       | 很好        |
-
----
-
-## 🌍 项目愿景
-
-- **开放、创新、共建！**
-- 持续探索通用人工智能边界，开发适用于各行业场景的大模型。
-- 欢迎行业伙伴与开发爱好者共创生态！
-
----
-
-## 🤝 联系我们
-
-<p align="left">
-  <a href="https://twitter.com/your_twitter" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="Twitter" height="30" width="40" /></a>
-  <a href="https://linkedin.com/in/your_linkedin" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="LinkedIn" height="30" width="40" /></a>
-  <a href="mailto:your@email.com" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="Email" height="30" width="40" /></a>
-</p>
-
----
-
-## ⭐️ 展示
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=QinghuaZhang1&repo=ACID111111)](https://github.com/QinghuaZhang1/ACID111111)
-
----
-
-> Powered by QinghuaZhang1 & AI Community
->
-> ![ACID Banner](https://capsule-render.vercel.app/api?type=wave&color=auto&height=150&section=header&text=Welcome%20to%20ACID%20LLM&fontSize=40)
-> 
-
-
-
-# 修改建议
-
-您可以在“最新发布模型下载”部分下方，增加一个填写单位信息的表格下载/提交说明，并建议使用第三方表单（如腾讯问卷、金山表单、Google Form等）收集信息，也可让用户填写您的邮箱。附一个表单字段建议和模板说明如下。
-
----
-
-## 📥 模型下载申请
-
-为了更好地管理和跟进模型的使用情况，请有意下载模型的单位或个人，先填写以下信息表格。我们会在审核后，通过您填写的联系方式发送下载链接（如有需要可直接留下表单或邮箱联系方式）。
-
-**请填写以下信息：**
-
-| 单位名称     | 联系人      | 职位/部门 | 联系邮箱         | 联系电话     | 申请用途                                                 |
-|--------------|-------------|-----------|------------------|--------------|---------------------------------------------------------|
-| 示例科技大学 | 张三        | 信息中心   | zhang@example.com | 139****8888 | 用于学术研究与课题合作                                         |
-
-- [点击填写在线表单](https://your-form-link.com)  
-  （如无在线表单，可请用户将上述信息发送至您的邮箱：**your@email.com**）
-
-我们将审核后尽快与您联系，提供模型下载方式。感谢您的支持与合作！
-
----
-
-# 示例插入到 README.md 中
-
-您可以将以下内容直接插入到 README.md 的“模型发布”部分下方：
-
-```markdown
-## 📥 模型下载申请
-
-为了便于管理和后续沟通，有意下载模型的单位或个人请填写下表（或发送至邮箱：your@email.com），我们审核后会第一时间与您联系并发送下载链接。
-
-| 单位名称     | 联系人 | 职位/部门 | 联系方式（邮箱/电话） | 申请用途 |
-|--------------|--------|-----------|----------------------|----------|
-|              |        |           |                      |          |
-
-- 推荐填写我们的在线申请表：[点击申请模型下载](https://your-form-link.com)
+```bash
+npm run build
 ```
-（将 `your@email.com` 和表单链接替换为您的真实信息）
+
+构建产物将输出到 `dist` 目录。
+
+### 预览构建结果
+
+```bash
+npm run preview
+```
+
+### 部署到 GitHub Pages
+
+1. 安装 `gh-pages` 包：
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. 在 `package.json` 中添加部署脚本：
+   ```json
+   {
+     "scripts": {
+       "deploy": "npm run build && gh-pages -d dist"
+     }
+   }
+   ```
+
+3. 运行部署：
+   ```bash
+   npm run deploy
+   ```
+
+## 🛠️ 技术栈
+
+- **前端框架**: React 19.2.0
+- **语言**: TypeScript 5.8.2
+- **构建工具**: Vite 6.2.0
+- **样式**: Tailwind CSS
+- **AI 服务**: Google Gemini API (@google/genai)
+- **图标**: Lucide React
+
+## 📁 项目结构
+
+```
+github_deploy/
+├── App.tsx              # 主应用组件
+├── index.tsx            # 入口文件
+├── index.html           # HTML 模板
+├── types.ts             # TypeScript 类型定义
+├── vite.config.ts       # Vite 配置
+├── package.json         # 依赖管理
+├── components/          # React 组件
+│   ├── Navbar.tsx       # 导航栏
+│   ├── Hero.tsx         # 首页英雄区
+│   ├── ModelSpecs.tsx   # 模型规格
+│   ├── ModelShowcase.tsx # 模型展示
+│   ├── InteractiveDemo.tsx # 交互式演示
+│   ├── Footer.tsx       # 页脚
+│   └── Icons.tsx        # 图标组件
+└── services/
+    └── geminiService.ts # Gemini API 服务
+```
+
+## 🎯 功能说明
+
+### 1. 模型性能展示
+- 展示 TerraSense-Base 8B 在多个基准测试中的性能指标
+- 包含 Precision、Recall、F1 Score、Mean IoU 等关键指标
+
+### 2. 交互式演示
+- 支持上传本地图像文件（TIFF/JPEG/PNG）
+- 或选择预设的示例图像
+- 使用 Gemini API 进行实时图像分析
+
+### 3. 多轮对话模拟
+- 展示模型在遥感图像理解任务中的对话能力
+- 支持目标检测、土地覆盖分类等任务
+
+## 🔧 配置说明
+
+### 环境变量
+
+| 变量名 | 说明 | 必需 |
+|--------|------|------|
+| `GEMINI_API_KEY` | Google Gemini API 密钥 | 是 |
+
+### Vite 配置
+
+开发服务器默认运行在 `http://localhost:3000`，可在 `vite.config.ts` 中修改。
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启 Pull Request
+
+## 📝 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+
+## 🔗 相关链接
+
+- [AI Studio 预览](https://ai.studio/apps/temp/2)
+- [Google Gemini API 文档](https://ai.google.dev/docs)
+- [React 文档](https://react.dev/)
+- [Vite 文档](https://vitejs.dev/)
+
+## 📧 联系方式
+
+如有问题或建议，请通过以下方式联系：
+
+- 提交 [Issue](https://github.com/your-username/terrasense/issues)
+- 发送邮件至: your-email@example.com
 
 ---
 
-如需帮助生成在线表单模板或进一步美化内容可随时告知！
-
+<div align="center">
+Made with ❤️ by TerraSense Team
+</div>
